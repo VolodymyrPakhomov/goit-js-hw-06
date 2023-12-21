@@ -20,4 +20,4 @@ const makelistImg = images.map(({alt, url}) =>{
   return `<li class="list"> <img class="js-gallery" src="${url}" alt="${alt}" width =100% ></li>`;
 });
 let imgEl = makelistImg.join(``);
-listImg.insertAdjacentHTML(`afterbegin`, makelistImg);
+listImg.insertAdjacentHTML(`afterbegin`, imgEl);
